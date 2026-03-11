@@ -1,19 +1,21 @@
-import BalanceCard from "../../../Components/BalanceCard"
-import Profile from "../../../Components/Profile"
-import TopBar from "../../../Components/TopBar"
+import BalanceCard from "../../../Components/BalanceCard";
+import Profile from "../../../Components/Profile";
+import TopBar from "../../../Components/TopBar";
 
 const Dashboard = () => {
-    return (
-        <div className="py-2 w-full bg-silver">
-            <Profile />
-            <TopBar name={'Sonia'} />
+  return (
+    <div className="py-2 w-full flex flex-col gap-3 max-w-[90%] mx-auto ">
+      <Profile />
+      <TopBar name={"Sonia"} />
 
-            <div className="flex w-full">
-                <div className="w-full flex flex-col gap-2 py-3">
-                    <span className="lg:block hidden md:block"><BalanceCard /></span>
-                </div>
-            </div>
+      <div className="flex w-full">
+        <div className="w-full flex flex-col gap-2 py-3">
+          <span className="lg:block hidden md:block">
+            <BalanceCard />
+          </span>
         </div>
-    )
-}
-export default Dashboard
+      </div>
+    </div>
+  );
+};
+export default Dashboard;

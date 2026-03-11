@@ -59,7 +59,7 @@ const Aside = () => {
 
         <hr />
 
-        <div className="p-3 flex flex-col gap-4">
+        <div className="p-3 flex flex-col gap-5">
           <h2>Refer a Friend</h2>
           <h2>Support</h2>
           <span className="flex items-center gap-3 ">

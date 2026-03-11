@@ -1,34 +1,39 @@
-import React, { useState } from 'react'
-import { FaEye } from 'react-icons/fa'
+import React, { useState } from "react";
+import { FaEye } from "react-icons/fa";
 import { GoEyeClosed } from "react-icons/go";
-import Naira from '../assets/naira.png'
+import Naira from "../assets/naira.png";
 
 const BalanceCard = () => {
-  const [isBalance, setIsBalance] = useState(false)
-  
+  const [isBalance, setIsBalance] = useState(false);
+
   const handleToggle = () => {
-    setIsBalance(!isBalance)
-  } 
+    setIsBalance(!isBalance);
+  };
   return (
-    <div className='border w-[30%] md:md-[40%] bg-white rounded-lg px-5 py-4 flex flex-col space-y-5'>
-      <div className='flex items-center justify-between'>
+    <div className="border w-[30%] md:md-[40%] bg-white rounded-2xl p-6 flex flex-col space-y-3">
+      <div className="flex items-center justify-between">
         <h2>Current Balance</h2>
-          {
-            isBalance ? (
-              <FaEye className='cursor-pointer' onClick={handleToggle} color='gray' />
-            ) : (
-              <GoEyeClosed className='cursor-pointer' onClick={handleToggle} color='gray' />
-            )
-          } 
+        {isBalance ? (
+          <FaEye
+            className="cursor-pointer"
+            onClick={handleToggle}
+            color="gray"
+          />
+        ) : (
+          <GoEyeClosed
+            className="cursor-pointer"
+            onClick={handleToggle}
+            color="gray"
+          />
+        )}
       </div>
 
-    <div className='flex items-center gap-3'>
-      <img className='h-6' src={Naira} alt="" />
-      <p className='font-bold text-2xl'>{isBalance ? '20,000' : '****'}</p>
+      <div className="flex items-center gap-3">
+        <img className="h-6" src={Naira} alt="" />
+        <p className="font-bold text-2xl">{isBalance ? "20,000" : "****"}</p>
+      </div>
     </div>
+  );
+};
 
-    </div>
-  )
-}
-
-export default BalanceCard
+export default BalanceCard;

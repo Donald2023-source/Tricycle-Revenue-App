@@ -4,7 +4,7 @@ import { HiOutlineMenuAlt2 } from "react-icons/hi";
 const userLayout = ({ children }) => {
   const [nav, setNav] = useState(false);
   return (
-    <div className="h-screen bg-silver py-3">
+    <div className="h-screen bg-[#f5f5f5] py-3">
       <div className="flex relative items-center container ">
         <span
           className={`w-full absolute top-0 transition duration-300 z-20 ${
