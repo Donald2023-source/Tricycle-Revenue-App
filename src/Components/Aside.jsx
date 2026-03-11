@@ -41,13 +41,13 @@ const Aside = () => {
           <img className='h-10 mb-5' src={logo} alt="" />
         <div className='flex flex-col justify-between h-[80%] lg:h-[90%]'>
 
-            <div className='flex flex-col gap-4'>
+            <div className='flex flex-col mt-5 gap-4'>
                 {navLinks.map((link, index) => {
                     return (
                         <div className='' key={index}>
-                            <NavLink className={(({isActive}) => `p-2 flex items-center gap-3 transition-all hover:bg-myGreen hover:text-white rounded-xl ${isActive && 'bg-myGreen text-white w-[100%] rounded-xl'}`)} to={link.to}>
+                            <NavLink className={(({isActive}) => `p-3 flex items-center gap-3 transition-all hover:bg-myGreen hover:text-white rounded-xl ${isActive && 'bg-myGreen text-white w-[100%] rounded-xl'}`)} to={link.to}>
                                 <span className='text-xl'>{link.icon}</span>
-                                <h2>{link.name}</h2>
+                                <h2 className='text-base'>{link.name}</h2>
                             </NavLink>
                         </div>
                     )
