@@ -1,6 +1,7 @@
 import BalanceCard from "../../../Components/BalanceCard";
 import Profile from "../../../Components/Profile";
 import TopBar from "../../../Components/TopBar";
+import TotalTransactionCard from "../../../Components/TotalTransactionCard";
 
 const Dashboard = () => {
   return (
@@ -9,9 +10,12 @@ const Dashboard = () => {
       <TopBar name={"Sonia"} />
 
       <div className="flex w-full">
-        <div className="w-full flex flex-col gap-2 py-3">
+        <div className="w-full flex flex-col gap-4 py-3">
           <span className="lg:block hidden md:block">
             <BalanceCard />
+          </span>
+          <span className="lg:block hidden md:block">
+            <TotalTransactionCard />
           </span>
         </div>
       </div>

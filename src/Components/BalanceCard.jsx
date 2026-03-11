@@ -10,7 +10,7 @@ const BalanceCard = () => {
     setIsBalance(!isBalance);
   };
   return (
-    <div className="border w-[30%] md:md-[40%] bg-white rounded-2xl p-6 flex flex-col space-y-3">
+    <div className="border w-[30%] md:w-[40%] bg-white rounded-2xl p-7 flex flex-col space-y-3">
       <div className="flex items-center justify-between">
         <h2>Current Balance</h2>
         {isBalance ? (
