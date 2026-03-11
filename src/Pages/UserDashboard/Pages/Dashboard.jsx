@@ -1,3 +1,4 @@
+import AddFundsCard from "../../../Components/AddFundsCard";
 import BalanceCard from "../../../Components/BalanceCard";
 import Profile from "../../../Components/Profile";
 import TopBar from "../../../Components/TopBar";
@@ -16,6 +17,9 @@ const Dashboard = () => {
           </span>
           <span className="lg:block hidden md:block">
             <TotalTransactionCard />
+          </span>
+          <span className="lg:block hidden md:block">
+            <AddFundsCard />
           </span>
         </div>
       </div>
